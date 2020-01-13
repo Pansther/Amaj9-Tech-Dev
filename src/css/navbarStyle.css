@@ -1,0 +1,37 @@
+.navbar-container {
+  padding: 15px;
+  background: orange;
+  overflow: auto;
+}
+
+.navbar-container .logo-box {
+  float: left;
+}
+
+.navbar-container .logo-box #logo {
+  text-decoration: none;
+  color: rgb(90, 29, 0);
+  font-size: 48px;
+  font-family: 'Lobster', cursive;
+}
+ 
+.navbar-container .logo-box img {
+  width: 100px;
+}
+
+.navbar-container .menu-box {
+  !background: blue;
+  float: right;
+  padding-top: 20px;
+}
+
+.navbar-container .menu-box a {
+  !background: blue;
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px 0px 10px;
+}
+
+.navbar-container .menu-box a:hover {
+  color: white;
+}
