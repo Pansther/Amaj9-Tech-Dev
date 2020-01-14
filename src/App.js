@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import Test from './test.js';
+import './App.css'; 
 
 import { Route } from 'react-router-dom'
 import { Switch } from 'react-router-dom'
@@ -21,7 +20,6 @@ function App() {
   return (
     <div className="Main">
       <Navbar />
-      <Test />
 
       <Switch>
         <Route exact path="/" component={Home} />
