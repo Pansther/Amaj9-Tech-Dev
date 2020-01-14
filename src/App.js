@@ -11,6 +11,9 @@ import Navbar from './component/navbar/index.js';
 import Home from './pages/home/index.js';
 import Category from './pages/category/index.js';
 
+/// css
+import './css/mainStyle.css';
+
 const NotFoundPage =()=> <h1>NotFoundPage</h1>;
 
 function App() {

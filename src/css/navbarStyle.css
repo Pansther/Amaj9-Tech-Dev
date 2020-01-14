@@ -2,6 +2,9 @@
   padding: 15px;
   background: orange;
   overflow: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .navbar-container .logo-box {
@@ -14,7 +17,7 @@
   font-size: 48px;
   font-family: 'Lobster', cursive;
 }
- 
+
 .navbar-container .logo-box img {
   width: 100px;
 }
@@ -23,6 +26,7 @@
   !background: blue;
   float: right;
   padding-top: 20px;
+  font-size: 18px;
 }
 
 .navbar-container .menu-box a {
