@@ -11,12 +11,11 @@ class Category extends React.Component {
     //console.log(categoryData);
     return (
       <div className='category-container'>
-        Hello, Category!
-
+      
         <div className='list-box'>
           {
             categoryData.map(item => (
-              <CategoryList key={item.id} name={item.name} img={item.img} alt={item.alt} />
+              <CategoryList key={item.id} href={item.href} name={item.name} img={item.img} alt={item.alt} />
             ))
           }
         </div>

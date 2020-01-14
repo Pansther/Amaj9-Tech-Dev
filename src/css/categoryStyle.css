@@ -1,20 +1,65 @@
 .category-container {
-  background: pink;
+  !background: pink;
   height: 500px;
+  margin-top: 25px;
 }
 
 .category-container .list-box {
   border: 5px solid black;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
 }
 
 .category-container .list-box .list-item {
-  background: red;
-  border: 1px solid black;
-  padding: 10px 10px 10px 10px;
+  background: rgb(204, 255, 255);
+  box-sizing: border-box;
+  border: 2px solid rgb(51, 153, 255);
+  border-radius: 5px;
+  width: 23%;
+  height: 80px;
+  float: left;
+  margin: 1% 1% 1% 1%;
 }
 
-.category-container .list-box .list-img {
-  width: 70px;
+.category-container .list-box .list-item:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.category-container .list-box .img-box {
+  width: 35%;
+  height: 80px;
+  !background: blue;
+  float: left;
+  position: relative;
+}
+
+.category-container .list-box .img-item {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  margin: 0;
+  margin-top: 10%;
+  margin-left: 10%;
+  !background: red;
+}
+
+.category-container .list-box .text-box {
+  width: 65%;
+  !background: green;
+  height: 80px;
+  float: left;
+}
+
+.category-container .list-box .text-item {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  padding-top: 10%;
+  display: table;
+  margin: 0 auto;
+  !background: pink;
 }

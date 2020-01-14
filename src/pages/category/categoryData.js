@@ -14,50 +14,60 @@ export const categoryData = [
     id: 1,
     name: 'Mouse',
     img: mouseImg,
+    href: '/mouse',
   },
   {
     id: 2,
     name: 'Keyboard',
     img: keyboardImg,
+    href: '/keyboard',
   },
   {
     id: 3,
-    name: 'Mouse-pad',
+    name: 'Mouse pad',
     img: mousePadImg,
+    href: '/mouse-pad',
   },
   {
     id: 4,
     name: 'SSD',
     img: ssdImg,
+    href: '/ssd',
   },
   {
     id: 5,
     name: 'HDD',
     img: hddImg,
+    href: '/hdd',
   },
   {
     id: 6,
     name: 'CPU',
     img: cpuImg,
+    href: '/cpu',
   },
   {
     id: 7,
     name: 'GPU',
     img: gpuImg,
+    href: '/gpu',
   },
   {
     id: 8,
     name: 'RAM',
     img: ramImg,
+    href: '/ram',
   },
   {
     id: 9,
     name: 'Mainboard',
-    img: mainboardImg
+    img: mainboardImg,
+    href: '/mainboard',
   },
   {
     id: 10,
-    name: 'Sound-card',
+    name: 'Sound card',
     img: soundCardImg,
+    href: '/sound-card',
   }
 ];
