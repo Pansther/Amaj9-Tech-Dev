@@ -2,21 +2,21 @@ export const menuData = [
   {
     id: 1,
     name: 'หน้าแรก',
-    href: "index.html"
+    route: '/home',
   },
   {
     id: 2,
     name: 'หมวดสินค้า',
-    href: "https://facebook.com"
+    route: '/category',
   },
   {
     id: 3,
     name: 'ตะกร้า',
-    href: "https://facebook.com"
+    route: '/basket',
   },
   {
     id: 4,
     name: 'เข้าสู่ระบบ',
-    href: "https://facebook.com"
+    route: '/login',
   }
 ];
