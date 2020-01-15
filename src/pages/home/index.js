@@ -20,6 +20,7 @@ import "slick-carousel/slick/slick-theme.css"
 
   
 class Home extends React.Component{
+    
     render(){
         const handleOnDragStart = (e) => e.preventDefault()
         const settings = {
@@ -39,9 +40,9 @@ class Home extends React.Component{
                     {
                     banners.map(ban =>(
                         <div>
-                        <a href={ban.link}>
-                            <img src={ban.src} onDragStart={handleOnDragStart} className="banner-img" />
-                        </a>
+                            <a href={ban.link}>
+                                <img src={ban.src} onDragStart={handleOnDragStart} className="banner-img" />
+                            </a>
                         </div>
                     ))
                     }
