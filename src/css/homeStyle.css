@@ -15,6 +15,13 @@
     height: 100%;
 }
 
+.slick-dots{
+    bottom: 1px !important;
+    opacity: 0;
+    transition: 0.3s;
+    
+    /* transform: translateY(20px); */
+}
 .slick-slider:hover .slick-next{
     /* transition: 0.3s; */
     opacity: 1;
@@ -25,6 +32,12 @@
     left: 1% !important;
     opacity: 1;
     
+    /* background-color: rgba(59, 59, 59, 0.247) !important; */
+}
+.slick-slider:hover .slick-dots{
+    /* transform: translateY(-20px); */
+    opacity: 1;
+    bottom: 10px !important;
     /* background-color: rgba(59, 59, 59, 0.247) !important; */
 }
 .slick-next,.slick-prev{
