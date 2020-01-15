@@ -7,6 +7,18 @@ import "slick-carousel/slick/slick-theme.css"
 // import AliceCarousel from 'react-alice-carousel'
 // import 'react-alice-carousel/lib/alice-carousel.css'
 
+// function SampleNextArrow(props) {
+//     const { className, style, onClick } = props;
+//     return (
+//       <div
+//         className={className}
+//         style={{ ...style, right: "1%"}}
+//         onClick={onClick}
+//       />
+//     );
+//   }
+
+  
 class Home extends React.Component{
     render(){
         const handleOnDragStart = (e) => e.preventDefault()
@@ -17,7 +29,8 @@ class Home extends React.Component{
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            // nextArrow: <SampleNextArrow/>
           };
         return(
             <div className="page">
