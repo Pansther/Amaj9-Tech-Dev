@@ -1,4 +1,4 @@
-import Home from '../../pages/home/index.js';
+//import Home from '../../pages/home/index.js';
 import NotYetPage from '../../pages/notyet/index.js';
 
 export const categoryRoute = [

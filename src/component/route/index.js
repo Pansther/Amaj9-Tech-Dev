@@ -10,6 +10,15 @@ import CreateRoute from './createRoute.js';
 /// pages
 import Home from '../../pages/home/index.js';
 import NotFoundPage from '../../pages/notfound/index.js';
+import Category from '../../pages/category/index.js';
+
+/*
+{
+  categoryRoute.map(cate => (
+    <CreateRoute key={cate.id} path={cate.path} component={cate.component} />
+  ))
+}
+*/
 
 class MyRoute extends React.Component {
 
@@ -22,13 +31,7 @@ class MyRoute extends React.Component {
           navRoute.map(nav => (
             <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
           ))
-        }
-
-        {
-          categoryRoute.map(cate => (
-            <CreateRoute key={cate.id} path={cate.path} component={cate.component} />
-          ))
-        }
+        } 
 
         <Route component={NotFoundPage} />
       </Switch>

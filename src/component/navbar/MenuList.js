@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 class MenuList extends React.Component {
 
   render () {
     return (
       <span>
-        <a href={this.props.href}>{this.props.name}</a>
+        <Link to={this.props.href}>{this.props.name}</Link>
       </span>
     );
   }

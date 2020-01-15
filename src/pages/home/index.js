@@ -18,11 +18,21 @@ import "slick-carousel/slick/slick-theme.css"
 //     );
 //   }
 
-  
 class Home extends React.Component{
-    
+
     render(){
         const handleOnDragStart = (e) => e.preventDefault()
+
+        const CreateBan =(props)=> {
+          return (
+            <div>
+                <a href={props.link}>
+                    <img src={props.src} onDragStart={handleOnDragStart} className="banner-img" alt={props.alt}/>
+                </a>
+            </div>
+          )
+        }
+
         const settings = {
             dots: true,
             infinite: true,
@@ -37,15 +47,11 @@ class Home extends React.Component{
             <div className="page">
                 <div className="slide">
                 <Slider {...settings}>
-                    {
+                  {
                     banners.map(ban =>(
-                        <div>
-                            <a href={ban.link}>
-                                <img src={ban.src} onDragStart={handleOnDragStart} className="banner-img" />
-                            </a>
-                        </div>
+                      <CreateBan key={ban.id} src={ban.src} alt={"ban-" + ban.id}/>
                     ))
-                    }
+                  }
                     {/* <a href="https://google.com">
                     <img src={require('../../img/home/download.jpg')}  onDragStart={handleOnDragStart} className="banner-img" />
                     </a>

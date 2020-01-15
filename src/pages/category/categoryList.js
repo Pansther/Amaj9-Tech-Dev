@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 class CategoryList extends React.Component {
 
   render () {
@@ -7,7 +9,7 @@ class CategoryList extends React.Component {
     //const productLink = 'category' + this.props.href;
     const productLink = this.props.href;
     return (
-      <a href={productLink}>
+      <Link to={productLink}>
         <div className='list-item'>
 
           <div className='img-box'>
@@ -19,7 +21,7 @@ class CategoryList extends React.Component {
           </div>
 
         </div>
-      </a>
+      </Link>
     );
   }
 
