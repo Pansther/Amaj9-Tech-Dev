@@ -1,11 +1,13 @@
 //import Home from '../../pages/home/index.js';
 import NotYetPage from '../../pages/notyet/index.js';
+import Mouse from '../../pages/category/mouse/index.js';
+import MousePad from '../../pages/category/mousePad/index.js';
 
 export const categoryRoute = [
   {
     id: 1,
     path: '/mouse',
-    component: NotYetPage,
+    component: Mouse,
   },
   {
     id: 2,
@@ -15,7 +17,7 @@ export const categoryRoute = [
   {
     id: 3,
     path: '/mouse-pad',
-    component: NotYetPage,
+    component: MousePad,
   },
   {
     id: 4,

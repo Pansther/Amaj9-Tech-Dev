@@ -1,38 +1,52 @@
 import React from 'react';
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
   useParams,
-  useRouteMatch
+  useRouteMatch,
 } from "react-router-dom";
 
 import {categoryData} from './categoryData.js';
-import CategoryList from './categoryList.js';
+import {categoryRoute} from '../../component/route/categoryRoute.js';
 
 import '../../css/categoryStyle.css';
 
-import Home from '../../pages/home/index.js';
-import Mouse from '../../pages/category/mouse/index.js';
-import MousePad from '../../pages/category/mousePad/index.js';
+/// problem solution of return Component instead <Component />
+function NewHOC (PassedComponent) {
+  return class extends React.Component {
+    render() {
+      return (
+          <PassedComponent {...this.props} />
+      )
+    }
+  }
+}
 
-function SubCategory() {
-  let { path } = useParams(); 
+function SubCategory(props) {
+  let { pathId } = useParams();
+  //console.log(categoryRoute);
+
   return (
-    <div>
-      {path === 'mouse' && <Mouse /> }
-      {path === 'mouse-pad' && <MousePad /> }
+    <div className={pathId}>
+      {
+        categoryRoute
+        .filter(cate => cate.path === `/${pathId}`)
+        .map(cate => {
+            const NewComponent = NewHOC(cate.component)
+            return(<NewComponent key={cate.id}/>)
+        })
+      }
     </div>
   );
 }
 
 const NewCategoryList =(props)=> {
-  let { path, url } = useRouteMatch();
+  let { url } = useRouteMatch();
   const newAlt = props.name + '-img';
-  //const productLink = 'category' + this.props.href;
   const productLink = props.href;
+  //console.log(`${url}${productLink}`);
   return (
       <div className='list-item'>
         <Link to={`${url}${productLink}`}>
@@ -63,21 +77,21 @@ const CategoryMain =()=> {
 }
 
 const Category =()=> {
-  //console.log(categoryData);
-  let { path, url } = useRouteMatch();
+  let { path } = useRouteMatch();
+  //console.log(path);
+  //console.log(url);
   return (
-    <div>
-      <Switch>
+    <Switch>
 
-        <Route exact path={path}>
-          <CategoryMain />
-        </Route>
-        <Route path={`${path}/:path`}>
-          <SubCategory />
-        </Route>
+      {/*
+        if don't go to sub-cate, it show category.
+        if go to sub-cate, it link to this sub-cate with nested route.
+      */}
 
-      </Switch>
-    </div>
+      <Route exact path={path} component={CategoryMain} /> {/*main cate*/}
+      <Route path={`${path}/:pathId`} component={SubCategory} /> {/*many sub cate*/}
+
+    </Switch>
   );
 }
 
