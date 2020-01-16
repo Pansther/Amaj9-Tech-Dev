@@ -8,7 +8,7 @@ import CreateRoute from './createRoute.js';
 
 /// pages
 import Home from '../../pages/home/index.js';
-import NotFoundPage from '../../pages/notfound/index.js'; 
+import NotFoundPage from '../../pages/notfound/index.js';
 
 /*
 {
@@ -23,7 +23,7 @@ class MyRoute extends React.Component {
   render () {
     return (
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
         {
           navRoute.map(nav => (
