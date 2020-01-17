@@ -1,14 +1,13 @@
 .slide {
     width: 100%;
     margin: 0 auto;
-    height: 2000px;
     background-color: aqua;
 
 }
 .page {
     overflow: hidden;
     width: 100%;
-    height: 1000px;
+    box-sizing: border-box;
 }
 .banner-img {
     width: 100%;

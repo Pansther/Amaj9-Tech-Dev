@@ -3,7 +3,8 @@ import '../../css/homeStyle.css';
 import Slider from "react-slick";
 import {banners} from "./banner.js"
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick-theme.css";
+import BestSell from "./bestseller.js";
 // import AliceCarousel from 'react-alice-carousel'
 // import 'react-alice-carousel/lib/alice-carousel.css'
 
@@ -45,6 +46,7 @@ class Home extends React.Component{
           };
         return(
             <div className="page">
+              
                 <div className="slide">
                 <Slider {...settings}>
                   {
@@ -67,6 +69,7 @@ class Home extends React.Component{
                 </Slider>
                 </div>
                 {/* <div className="araiD"></div> */}
+                <BestSell />
             </div>
         );
     }
