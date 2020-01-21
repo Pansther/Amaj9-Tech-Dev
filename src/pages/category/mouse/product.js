@@ -1,7 +1,7 @@
 export const mouseProduct = [
   {
     id: 1,
-    name: 'mouse1',
+    name: 'Logitech G202',
     pic: {
       img1: [require('../../../img/category/mouse/product1/prod1_1.jpg')],
       img2: [require('../../../img/category/mouse/product1/prod1_2.jpg')],
@@ -10,10 +10,12 @@ export const mouseProduct = [
       img5: [require('../../../img/category/mouse/product1/prod1_5.jpg')],
       img6: [require('../../../img/category/mouse/product1/prod1_6.jpg')],
     },
+    detail: 'USB 2.0 / 1000 DPI / 3 Buttons',
+    price: '500',
   },
   {
     id: 2,
-    name: 'mouse2',
+    name: 'Asus Mx89',
     pic: {
       img1: [require('../../../img/category/mouse/product1/prod1_1.jpg')],
       img2: [require('../../../img/category/mouse/product1/prod1_2.jpg')],
@@ -22,10 +24,12 @@ export const mouseProduct = [
       img5: [require('../../../img/category/mouse/product1/prod1_5.jpg')],
       img6: [require('../../../img/category/mouse/product1/prod1_6.jpg')],
     },
+    detail: 'USB 2.0 / 1000 DPI / 3 Buttons',
+    price: '500',
   },
   {
     id: 3,
-    name: 'mouse3',
+    name: 'Razer 696',
     pic: {
       img1: [require('../../../img/category/mouse/product1/prod1_1.jpg')],
       img2: [require('../../../img/category/mouse/product1/prod1_2.jpg')],
@@ -34,10 +38,12 @@ export const mouseProduct = [
       img5: [require('../../../img/category/mouse/product1/prod1_5.jpg')],
       img6: [require('../../../img/category/mouse/product1/prod1_6.jpg')],
     },
+    detail: 'USB 2.0 / 1000 DPI / 3 Buttons',
+    price: '500',
   },
   {
     id: 4,
-    name: 'mouse4',
+    name: 'Lenoveo 999',
     pic: {
       img1: [require('../../../img/category/mouse/product1/prod1_1.jpg')],
       img2: [require('../../../img/category/mouse/product1/prod1_2.jpg')],
@@ -46,5 +52,7 @@ export const mouseProduct = [
       img5: [require('../../../img/category/mouse/product1/prod1_5.jpg')],
       img6: [require('../../../img/category/mouse/product1/prod1_6.jpg')],
     },
+    detail: 'USB 2.0 / 1000 DPI / 3 Buttons',
+    price: '500',
   },
 ];

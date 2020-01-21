@@ -32,10 +32,19 @@ const CategoryBar =()=> {
 
 const CreateProduct =(props)=> {
   //console.log(props.cover);
-  //console.log(props.id); 
+  //console.log(props.id);
   return (
-    <div className='product' id={props.id}>
-      <img src={props.cover} alt={props.name}/>
+    <div className='product' id={props.id} to='#'>
+      <Link className='img-box'>
+        <img src={props.cover} alt={props.name}/>
+      </Link>
+      <div className='detail-box'>
+        <Link className='name'>{props.name}</Link>
+        <p className='detail'>{props.detail}</p>
+        <div className='add-btn-box'>
+          <b><p className='add-btn-'>{`${props.price}.-`}</p></b>
+        </div>
+      </div>
     </div>
   );
 }
@@ -51,9 +60,12 @@ class ProductList extends React.Component {
         </div>
 
         <div className='product-list' id={this.props.name}>
+          <div className='product-name' id={this.props.name}>
+            <p className='name'>{this.props.name}</p>
+          </div>
           {
             this.props.productDataList.map(product => (
-              <CreateProduct key={product.id} id ={product.id} name={product.name} cover={product.pic.img1}/>
+              <CreateProduct key={product.id} id ={product.id} name={product.name} cover={product.pic.img1} detail={product.detail} price={product.price} />
             ))
           }
         </div>
