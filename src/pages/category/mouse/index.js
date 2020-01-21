@@ -8,7 +8,7 @@ class Mouse extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'mouse'} productDataList={mouseProduct}/>
+      <ProductList name={'Mouse'} productDataList={mouseProduct}/>
     );
   }
 }
