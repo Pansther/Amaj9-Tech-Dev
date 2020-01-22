@@ -7,12 +7,11 @@ import {
   //Route,
   Link,
   //useParams,
-  useRouteMatch,
 } from "react-router-dom";
 
 import '../../css/productListStyle.css';
 
-const CategoryBarItem =(props)=> {  
+const CategoryBarItem =(props)=> {
   return (
     <Link to={`/category${props.href}`}>{props.name}</Link>
   );
@@ -39,7 +38,9 @@ const CreateProduct =(props)=> {
         <img src={props.cover} alt={props.name}/>
       </Link>
       <div className='detail-box'>
-        <Link className='name'>{props.name}</Link>
+        <div className='name'>
+          <Link>{props.name}</Link>
+        </div>
         <p className='detail'>{props.detail}</p>
         <div className='add-btn-box'>
           <b><p className='add-btn-'>{`${props.price}.-`}</p></b>

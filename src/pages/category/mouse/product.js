@@ -1,7 +1,7 @@
 export const mouseProduct = [
   {
     id: 1,
-    name: 'USB Optical Mouse HP Logitech G202',
+    name: 'USB Optical Mouse Logitech G202',
     pic: {
       img1: [require('../../../img/category/mouse/product1/prod1_1.jpg')],
       img2: [require('../../../img/category/mouse/product1/prod1_2.jpg')],

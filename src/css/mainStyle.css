@@ -1,4 +1,4 @@
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1045px) {
   .product-box .product-list .product {
     width: 33.3%;
   }
@@ -73,12 +73,12 @@
     padding: 0px 5px 0px 5px;
   }
 
-  .product .detail-box .name {
+  .product .detail-box .name a {
     font-size: 12px;
   }
 
   .product .detail-box .detail {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .product .detail-box .add-btn-box {

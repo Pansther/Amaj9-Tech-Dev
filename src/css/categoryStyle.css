@@ -1,7 +1,8 @@
 .category-container {
   !background: pink;
-  height: 500px;
+  !height: 500px;
   margin-top: 25px;
+  padding-bottom: 25px; 
 }
 
 .category-container .list-box {
@@ -79,4 +80,4 @@
   .category-container .list-box .list-item {
     width: 48%;
   }
-} 
+}
