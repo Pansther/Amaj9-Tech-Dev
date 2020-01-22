@@ -1,6 +1,6 @@
 .navbar-container {
   padding: 15px;
-  background: orange;
+  background: rgb(245,182,75);
   overflow: auto;
   position: sticky;
   top: 0px;
@@ -23,14 +23,12 @@
 }
 
 .navbar-container .menu-box {
-  !background: blue;
   float: right;
   padding-top: 20px;
   font-size: 18px;
 }
 
-.navbar-container .menu-box a {
-  !background: blue;
+.navbar-container .menu-box a { 
   text-decoration: none;
   color: black;
   padding: 0px 10px 0px 10px;

@@ -42,6 +42,10 @@
     display: none;
   }
 
+  .product-box .product-list .all-product {
+    width: 100%;
+  }
+
   .product-box .product-list .product-name {
     padding-left: 0%;
   }
