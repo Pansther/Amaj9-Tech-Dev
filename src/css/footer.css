@@ -16,7 +16,7 @@
     background-color: rgb(235, 235, 235);
 }
 
-.store {
+.store-wrapper {
     display: inline;
 }
 
@@ -26,24 +26,30 @@
     border-bottom: 1px solid rgb(194, 194, 194);
 }
 
+.contact-vline{
+    display: inline-block;
+    padding: 5px;
+}
+
 .copyright {
     float: left;
+    padding-top: 5px;
     padding-right: 10px;
 }
 
-.menu-box {
+.contact-wrapper {
     margin-top: 10px;
     text-decoration: none;
     color: rgb(100, 99, 99);
 }
 
-.menu-box #contact {
+.contact-wrapper #contact {
     color: darkcyan;
     position: relative;
     display: inline-block;
     text-decoration: none;
 }
 
-.menu-box #contact:hover {
+.contact-wrapper #contact:hover {
     text-decoration: underline;
 }
