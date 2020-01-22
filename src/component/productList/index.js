@@ -39,7 +39,7 @@ const CreateProduct =(props)=> {
       </Link>
       <div className='detail-box'>
         <div className='name'>
-          <Link>{props.name}</Link>
+          <Link to='#'>{props.name}</Link>
         </div>
         <p className='detail'>{props.detail}</p>
         <div className='add-btn-box'>

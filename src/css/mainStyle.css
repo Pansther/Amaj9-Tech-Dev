@@ -1,5 +1,13 @@
+#root {
+  !background: rgb(252, 252, 252);
+}
+
 /** Laptop */
-@media screen and (max-width: 1045px) { 
+@media screen and (max-width: 1045px) {
+  .product-box .category-bar a {
+    font-size: 13px;
+  }
+
   .product-box .product-list .product {
     width: 33.3%;
   }
@@ -49,6 +57,8 @@
 
   .product-box .product-list .product-name {
     padding-left: 0%;
+    margin-left: 0%;
+    width: 100%;
   }
 
   .product-box .product-list {
