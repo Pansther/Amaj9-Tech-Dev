@@ -11,7 +11,7 @@ import {
 import {categoryData} from './categoryData.js';
 import {categoryRoute} from '../../component/route/categoryRoute.js';
 
-import '../../css/categoryStyle.css';
+import '../../css/categoryStyle.css'; 
 
 /// problem solution of return Component instead <Component />
 function NewHOC (PassedComponent) {

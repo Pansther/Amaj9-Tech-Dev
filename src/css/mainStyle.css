@@ -4,6 +4,15 @@
 
 /** Laptop */
 @media screen and (max-width: 1045px) {
+  .category-container .list-box .text-item {
+    font-size: 24px;
+  }
+
+  .category-container .list-box .list-item:hover .text-item {
+    transition: font-size 0.5s;
+    font-size: 28px;
+  }
+
   .product-box .category-bar a {
     font-size: 13px;
   }

@@ -4,6 +4,9 @@
     background-color: aqua;
 
 }
+.slide:hover {
+  cursor: grab;
+}
 .page {
     overflow: hidden;
     width: 100%;
