@@ -3,6 +3,9 @@ import NotYetPage from '../../pages/notyet/index.js';
 import Mouse from '../../pages/category/mouse/index.js';
 import Keyboard from '../../pages/category/keyboard/index.js';
 import MousePad from '../../pages/category/mousePad/index.js';
+import SSD from '../../pages/category/ssd/index.js';
+import HDD from '../../pages/category/hdd/index.js';
+import CPU from '../../pages/category/cpu/index.js';
 
 export const categoryRoute = [
   {
@@ -23,17 +26,17 @@ export const categoryRoute = [
   {
     id: 4,
     path: '/ssd',
-    component: NotYetPage,
+    component: SSD,
   },
   {
     id: 5,
     path: '/hdd',
-    component: NotYetPage,
+    component: HDD,
   },
   {
     id: 6,
     path: '/cpu',
-    component: NotYetPage,
+    component: CPU,
   },
   {
     id: 7,
