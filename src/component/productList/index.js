@@ -19,13 +19,13 @@ const CategoryBarItem =(props)=> {
 
 const CategoryBar =()=> {
   return (
-    <>
+    <div className='category-bar'>
       {
         categoryData.map(cate => (
           <CategoryBarItem key={cate.id} name={cate.name} href={cate.href} />
         ))
       }
-    </>
+    </div>
   );
 }
 
@@ -56,9 +56,7 @@ class ProductList extends React.Component {
     //console.log(this.props.productDataList);
     return (
       <div className='product-box' id={this.props.name}>
-        <div className='category-bar'>
           <CategoryBar />
-        </div>
 
         <div className='product-list' id={this.props.name}>
           <div className='product-name' id={this.props.name}>
