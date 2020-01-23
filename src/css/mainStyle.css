@@ -38,12 +38,13 @@
     display: block;
     float: none;
     text-align: center;
-    margin: 40px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     !position: absolute;
   }
 
   .category-container .list-box .list-item {
     width: 98%;
+    margin-bottom: 10px;
   }
 
   .product-box .category-bar {
