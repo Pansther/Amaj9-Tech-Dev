@@ -21,8 +21,7 @@ class Navbar extends React.Component {
           menuData.map(menu => (
               <MenuList key={menu.id} name={menu.name} href={menu.route}/>
           ))
-        }
-        <Link to='/topics'>topics</Link>
+        } 
         </div>
       </div>
     );

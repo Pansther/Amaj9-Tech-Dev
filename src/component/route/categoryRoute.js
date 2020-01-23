@@ -1,6 +1,7 @@
 //import Home from '../../pages/home/index.js';
 import NotYetPage from '../../pages/notyet/index.js';
 import Mouse from '../../pages/category/mouse/index.js';
+import Keyboard from '../../pages/category/keyboard/index.js';
 import MousePad from '../../pages/category/mousePad/index.js';
 
 export const categoryRoute = [
@@ -12,7 +13,7 @@ export const categoryRoute = [
   {
     id: 2,
     path: '/keyboard',
-    component: NotYetPage,
+    component: Keyboard,
   },
   {
     id: 3,

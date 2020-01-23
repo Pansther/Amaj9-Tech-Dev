@@ -8,6 +8,7 @@ import {
 /// components
 import Navbar from './component/navbar/index.js';
 import MyRoute from './component/route/index.js'; 
+import Footer from './component/footer/index.js';
 
 /// css
 import './css/mainStyle.css';
@@ -18,8 +19,9 @@ function App() {
 
       <BrowserRouter>
 
-        <Navbar />
-        <MyRoute />
+        <Navbar/>
+        <MyRoute/>
+        <Footer/>
 
       </BrowserRouter>
 

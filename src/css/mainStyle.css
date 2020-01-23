@@ -1,5 +1,28 @@
-@media screen and (max-width: 620px) {
+#root {
+  !background: rgb(252, 252, 252);
+}
 
+/** Laptop */
+@media screen and (max-width: 1045px) {
+  .product-box .category-bar a {
+    font-size: 13px;
+  }
+
+  .product-box .product-list .product {
+    width: 33.3%;
+  }
+
+  .product-box .product-list .product .detail-box .name {
+    font-size: 14px;
+  }
+
+  .product-box .product-list .product .detail-box .detail{
+    font-size: 10px;
+  }
+}
+
+/** Tablet */
+@media screen and (max-width: 620px) {
   .navbar-container .logo-box {
     display: block;
     width: 100%;
@@ -15,16 +38,44 @@
     display: block;
     float: none;
     text-align: center;
-    margin: 40px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     !position: absolute;
   }
 
   .category-container .list-box .list-item {
     width: 98%;
+    margin-bottom: 10px;
   }
 
+  .product-box .category-bar {
+    float: none;
+    display: none;
+  }
+
+  .product-box .product-list .all-product {
+    width: 100%;
+  }
+
+  .product-box .product-list .product-name {
+    padding-left: 0%;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .product-box .product-list {
+    width: 100%;
+  }
+
+  .product-box .product-list .product-name {
+    text-align: center;
+  }
+
+  .product-box .product-list .product {
+    width: 50%;
+  }
 }
 
+/** Phone */
 @media screen and (max-width: 450px) {
 
   .navbar-container .menu-box {
@@ -37,5 +88,17 @@
 
   .navbar-container .menu-box a {
     padding: 0px 5px 0px 5px;
+  }
+
+  .product .detail-box .name a {
+    font-size: 12px;
+  }
+
+  .product .detail-box .detail {
+    font-size: 6px;
+  }
+
+  .product .detail-box .add-btn-box {
+    width: 60%;
   }
 }

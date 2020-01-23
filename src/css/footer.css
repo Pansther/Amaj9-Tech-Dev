@@ -1,0 +1,56 @@
+.footer-wrapper {
+    display: block;
+    min-height: 100%; /* real browsers */
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6 bug */
+    margin-bottom: -100px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+ }
+
+.footer {
+    margin-top: 20px;
+    width: 96%;
+    height: 100px;
+    padding: 2%;
+    display: block;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+    background-color: rgb(235, 235, 235);
+}
+
+.store-wrapper {
+    display: inline;
+}
+
+.hline {
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.contact-vline{
+    display: inline-block;
+    padding: 5px;
+}
+
+.copyright {
+    float: left;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.contact-wrapper {
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+.contact-wrapper #contact {
+    color: darkcyan;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-wrapper #contact:hover {
+    text-decoration: underline;
+}
