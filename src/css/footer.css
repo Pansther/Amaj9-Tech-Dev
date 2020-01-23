@@ -1,4 +1,18 @@
 .footer-wrapper {
+<<<<<<< HEAD
+=======
+    display: block;
+    min-height: 100%; /* real browsers */
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6 bug */
+    margin-bottom: -100px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+ }
+
+.footer {
+    margin-top: 20px;
+    width: 96%;
+    height: 100px;
+>>>>>>> f6b8bd94cb063ff173639e85a4b7b636b8a65407
     padding: 2%;
     height: 100px;
     display: block;
@@ -35,6 +49,7 @@
 }
 
 .contact-wrapper #contact:hover {
+<<<<<<< HEAD
     filter: grayscale(50%);
 }
 
@@ -43,3 +58,7 @@
     padding-top: 5px;
     padding-right: 10px;
 }
+=======
+    text-decoration: underline;
+}
+>>>>>>> f6b8bd94cb063ff173639e85a4b7b636b8a65407
