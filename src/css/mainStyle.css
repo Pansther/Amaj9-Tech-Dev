@@ -2,7 +2,6 @@
     !background: rgb(252, 252, 252);
 }
 
-<<<<<<< HEAD
 /** Laptop */
 @media screen and (max-width: 1045px) {
   .category-container .list-box .text-item {
@@ -17,8 +16,7 @@
   .product-box .category-bar a {
     font-size: 13px;
   }
-=======
->>>>>>> 8dcf7f592cd77cb5204509e58154a1d8befc7b80
+}
 
 /** Laptop */
 
