@@ -22,17 +22,19 @@ class MyRoute extends React.Component {
 
   render () {
     return (
-      <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+      <>
+        <Switch>
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
-        {
-          navRoute.map(nav => (
-            <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
-          ))
-        }
+          {
+            navRoute.map(nav => (
+              <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
+            ))
+          }
 
-        <Route component={NotFoundPage} />
-      </Switch>
+          <Route component={NotFoundPage} />
+        </Switch>
+      </>
     );
   }
 

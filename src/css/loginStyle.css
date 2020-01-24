@@ -1,0 +1,124 @@
+.login-contain{
+  position: fixed;
+  !margin-top: 200px;
+  width: 100%;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  visibility: hidden;
+  padding-top: 15%;
+}
+.contain {
+  background: red;
+  width: 40%;
+  margin: 0 auto;
+  padding: 75px 0px 75px 0px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bfbcc2;
+  position: relative;
+}
+.contain-box{
+  background: yellow;
+  width: 65%;
+  margin: 0 auto;
+}
+.login{
+  border-style: solid;
+  border-width: 1px;
+  width: 500px;
+  height: 450px;
+}
+button{
+  cursor: pointer;
+}
+button:focus{
+    outline: none !important;
+}
+input:focus {
+    outline: none !important;
+}
+#id{
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #DADADA;
+  height: 30px;
+  width: 200px;
+}
+
+#pwd{
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #DADADA;
+  height: 30px;
+  width: 200px;
+
+}
+text{
+  font-size: 16px;
+  font-family: monospace;
+}
+.idinput{
+  display:inline-block;
+  width: 100px;
+  margin-bottom:40px;
+}
+.pwdinput{
+    display:inline-block;
+    width: 100px;
+}
+#textID{
+    position: relative;
+    width: 100px;
+}
+#textPassword{
+    position: relative;
+    width: 100px;
+}
+#bt1{
+  border-radius: 5px;
+  border-color: #DADADA;
+  width: 100px;
+  height: 55px;
+  font-size: 16px;
+  font-family: monospace;
+  z-index: 0;
+}
+#bt2{
+  border-radius: 5px;
+  border-color: #DADADA;
+  width: 100px;
+  height: 55px;
+  font-size: 16px;
+  font-family: monospace;
+  z-index: 1;
+}
+#forgetpwd{
+  font-size: 14px;
+  font-family: monospace;
+  z-index: 3;;
+  text-align: right;
+}
+#forgetpwd:hover{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+
+}
+.fgpwdgroup{
+  display: flex;
+  flex-direction:column;
+
+}
+.pwdgroup{
+  display: flex;
+}
+.btgroup{
+
+}
+.bt{
+  margin-left: 20px;
+  margin-top: 20px;
+}
