@@ -29,7 +29,7 @@ class MyRoute extends React.Component {
       return this.props.location;
     }
     return (
-<<<<<<< HEAD
+      <div>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
@@ -46,8 +46,7 @@ class MyRoute extends React.Component {
 
         <Route component={NotFoundPage} />
       </Switch>
-=======
-      <>
+      
         <Switch>
           <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
@@ -58,9 +57,8 @@ class MyRoute extends React.Component {
           }
 
           <Route component={NotFoundPage} />
-        </Switch>
-      </>
->>>>>>> 257affe6551a424bff9135cbafabb7d55c064ec2
+      </Switch>
+      </div>
     );
   }
 
