@@ -1,14 +1,15 @@
 .footer-wrapper {
     padding: 2%;
-    height: 100px;
+    height: 90px;
     display: block;
-    font-size: 13px;
+    font-size: 15px;
     position: relative;
     color: rgb(114, 114, 114);
     background-color: rgb(235, 235, 235);
 }
+
 .footer {
-    bottom: 10%;
+    bottom: 8%;
     width: 96%;
     position: absolute;
 }
@@ -30,6 +31,7 @@
 
 .contact-wrapper #contact {
     display: inline;
+    position: relative;
     padding-left: 10px;
     text-decoration: none;
 }

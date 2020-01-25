@@ -7,8 +7,9 @@ import {
 
 /// components
 import Navbar from './component/navbar/index.js';
-import MyRoute from './component/route/index.js'; 
+import MyRoute from './component/route/index.js';
 import Footer from './component/footer/index.js';
+import Login from './component/Login/index.js';
 
 /// css
 import './css/mainStyle.css';
@@ -17,6 +18,8 @@ function App() {
   return (
     <div className="Main">
 
+      <Login/>
+
       <BrowserRouter>
 
         <Navbar/>
@@ -24,7 +27,7 @@ function App() {
         <Footer/>
 
       </BrowserRouter>
-
+      
     </div>
   );
 }

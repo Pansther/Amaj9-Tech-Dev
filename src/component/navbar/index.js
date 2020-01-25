@@ -9,7 +9,7 @@ import MenuList from './MenuList.js';
 import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
-  render () {
+  render () { 
     //console.log(menuData);
     return (
       <div className='navbar-container'>
@@ -19,9 +19,9 @@ class Navbar extends React.Component {
         <div className='menu-box'>
         {
           menuData.map(menu => (
-              <MenuList key={menu.id} name={menu.name} href={menu.route}/>
+              <MenuList key={menu.id} name={menu.name} href={menu.route} isRoute={menu.isRoute}/>
           ))
-        } 
+        }
         </div>
       </div>
     );

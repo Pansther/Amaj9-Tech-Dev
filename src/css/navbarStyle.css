@@ -1,6 +1,7 @@
 .navbar-container {
   padding: 15px;
-  background: rgb(247,167,10);
+  background: rgb(252,149,11);
+  !background: orange;
   overflow: auto;
   position: sticky;
   top: 0px;
@@ -19,7 +20,7 @@
   color: rgb(90, 29, 0);
   font-size: 48px;
   font-family: 'Lobster', cursive;
-  text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 3px 3px 4px rgba(255, 255, 0, 0.5);
 }
 
 .navbar-container .logo-box img {

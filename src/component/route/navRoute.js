@@ -19,9 +19,4 @@ export const navRoute = [
     path: '/basket',
     component: NotYetPage,
   },
-  {
-    id: 4,
-    path: '/login',
-    component: NotYetPage,
-  },
 ];

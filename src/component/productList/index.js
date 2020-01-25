@@ -41,7 +41,9 @@ const CreateProduct =(props)=> {
         <div className='name'>
           <Link to='#'>{props.name}</Link>
         </div>
-        <p className='detail'>{props.detail}</p>
+        <div className='detail-small'>
+          <p className='detail'>{props.detail}</p>
+        </div>
         <div className='add-btn-box'>
           <b><p className='add-btn-'>{`${props.price}.-`}</p></b>
         </div>
