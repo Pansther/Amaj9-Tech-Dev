@@ -34,7 +34,7 @@ const CreateProduct =(props)=> {
   //console.log(props.id);
   return (
     <div className='product' id={props.id}>
-      <Link className='img-box' to='#'>
+      <Link className='img-box' to={'/product/'+ props.id }>
         <img src={props.cover} alt={props.name}/>
       </Link>
       <div className='detail-box'>
@@ -65,7 +65,7 @@ class ProductList extends React.Component {
           <div className='all-product'>
             {
               this.props.productDataList.map(product => (
-                <CreateProduct key={product.id} id ={product.id} name={product.name} cover={product.pic.img1} detail={product.detail} price={product.price} />
+                <CreateProduct key={product.id} id={product.id} name={product.name} cover={product.pic[0]} detail={product.detail} price={product.price} />
               ))
             }
           </div>

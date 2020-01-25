@@ -1,0 +1,116 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.page{
+    width: 100%;
+}
+
+.productInfo{
+    display:flex;
+    width: 100%;
+}
+.slidepic{
+    display:block;
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px;
+    border:2px solid rgba(80, 80, 80, 0.089);
+    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.15); */
+    padding:20px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+}
+.number{
+    display: flex;
+    height: 40px;
+    width: 125px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    border:1px solid rgba(80, 80, 80, 0.089);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+}
+.number-add, .number-sub{
+    line-height: 2.3em;
+    text-align: center;
+    width: 100%;
+}
+.number-add:hover, .number-sub:hover{
+    cursor: pointer;
+}
+.numbers{
+    text-align: center;
+    width: 100%;
+    border: 0;
+}
+
+.addtocart, .wishlist{
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+.cart, .wish{
+    background-color: rgb(247,167,10);
+    border:0px solid rgb(255, 217, 0);
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
+    color: rgb(90, 29, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.cart:hover, .wish:hover{
+    background-color: rgb(90, 29, 0);
+    color:white;
+}
+
+.item-name{
+    font-size: 2em;
+}
+
+.descript{
+    font-size: 1.5em;
+}
+
+.price{
+    font-size: 2em;
+}
+
+.userInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table-list{
+    display: flex;
+    justify-content: center;
+}
+.review, .spec, .tabButton{
+    outline: none;
+    padding: 10px 30px 10px 30px;
+    /* padding-bottom: 2px; */
+    font-size: 1.8em;
+    background-color: white;
+    border: 0px;
+    border-radius: 0px;
+}
+/* .review:hover, .spec:hover{
+    background-color: rgba(168, 168, 168, 0.342);
+} */
+.active{
+    border-bottom:2px rgb(247,167,10) solid;
+    padding-bottom: 8px;
+}
+
+.tabContent{
+    width: 100%;
+
+}
+

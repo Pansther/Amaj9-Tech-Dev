@@ -6,7 +6,7 @@ class promotion extends React.Component{
         return(
             <div className="container">
                 <div className="tile">
-                    <img src={require("xxx.jpg")} />
+                   
                 </div>
 
             </div>
