@@ -46,7 +46,7 @@ class Home extends React.Component{
           };
         return(
             <div className="page">
-              
+
                 <div className="slide">
                 <Slider {...settings}>
                   {

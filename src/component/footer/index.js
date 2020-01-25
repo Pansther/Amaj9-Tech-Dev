@@ -20,10 +20,10 @@ export default function Footer() {
                     <div className="copyright">Copyright © 6969 B.C. Amaj9 Technologies Inc. สงวนสิทธิ์ทุกประการ</div>
                     <div className="warp-wrapper">
                         <a id="contact" href="Instagram"><img src={require("../../img/footer/instagram.svg")} width="25" height="25" alt="ig"></img></a>
-                        <a id="contact" href="Facebook"><img src={require("../../img/footer/facebook.svg")} width="25" height="25" alt="fb"></img></a>
+                        <a id="contact" href="https://www.facebook.com/gurock.hin"><img src={require("../../img/footer/facebook.svg")} width="25" height="25" alt="fb"></img></a>
                         <a id="contact" href="Twitter"><img src={require("../../img/footer/twitter.svg")} width="25" height="25" alt="twit"></img></a>
                         <a id="contact" href="https://vk.com/clubkonthai"><img src={require("../../img/footer/vk.svg")} width="25" height="25" alt="vk"></img></a>
-                        <a id="contact" href="github"><img src={require("../../img/footer/github.svg")} width="25" height="25" alt="git"></img></a>
+                        <a id="contact" href="https://github.com/Pansther/Amaj9-Tech-Dev"><img src={require("../../img/footer/github.svg")} width="25" height="25" alt="git"></img></a>
                     </div>
                 </div>
 
