@@ -8,7 +8,7 @@ class SSD extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'SSD'} productDataList={ssdProduct}/>
+      <ProductList name={'SSD'} productDataList={ssdProduct} type="ssd"/>
     );
   }
 }

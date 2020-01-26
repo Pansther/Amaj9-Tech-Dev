@@ -8,7 +8,7 @@ class Keyboard extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'Keyboard'} productDataList={keyboardProduct}/>
+      <ProductList name={'Keyboard'} productDataList={keyboardProduct} type="keyboard"/>
     );
   }
 }

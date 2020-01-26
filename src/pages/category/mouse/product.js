@@ -1,3 +1,4 @@
+export const type = 'mouse'
 export const mouseProduct = [
   {
     id: 1,

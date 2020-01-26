@@ -8,7 +8,7 @@ class CPU extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'CPU'} productDataList={cpuProduct}/>
+      <ProductList name={'CPU'} productDataList={cpuProduct} type="cpu"/>
     );
   }
 }

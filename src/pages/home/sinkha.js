@@ -33,7 +33,7 @@ class Sinkha extends React.Component{
     }
     render(){
         
-        const Descript = (props) =>{
+        const Descript = () =>{
             return(
                 <div className="description">
                     <h1>{this.props.product.detail}</h1>
@@ -85,11 +85,26 @@ class Sinkha extends React.Component{
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+            dotsClass: "slick-dots slick-thumb",
+
+            customPaging: (i) => {
+                return (
+                  <a>
+                    {
+                        // <h1>{i+1}</h1>
+                        <img className="thumb" src={this.props.product.pic[i]} />
+                    }
+                  </a>
+                );
+              },
+            //   dotsClass: "slick-dots slick-thumb",
+              
             // nextArrow: <SampleNextArrow/>
           };
         
         return(
             <div className="page">
+                
                 <div className="container">
                     <div className="productInfo"> 
                         <div className="slidepic">

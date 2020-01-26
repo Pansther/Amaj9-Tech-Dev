@@ -12,6 +12,13 @@ import NotFoundPage from '../../pages/notfound/index.js';
 import {sink} from '../../pages/home/bestseller.js'
 import {product} from '../../pages/home/data.js';
 import {mouseProduct} from '../../pages/category/mouse/product.js';
+import {keyboardProduct} from '../../pages/category/keyboard/product.js';
+import {ssdProduct} from '../../pages/category/ssd/product.js';
+import {mousePadProduct} from '../../pages/category/mousePad/product.js';
+import {hddProduct} from '../../pages/category/hdd/product.js';
+import {cpuProduct} from '../../pages/category/cpu/product.js';
+
+
 import Sinkha from '../../pages/home/sinkha.js';
 /*
 {
@@ -24,10 +31,32 @@ import Sinkha from '../../pages/home/sinkha.js';
 class MyRoute extends React.Component {
 
   render () {
-    const getPath = (props) =>{
-      console.log(this.props.location);
-      return this.props.location;
-    }
+    const item = [
+      {
+        product_data: mouseProduct,
+        path: 'mouse',
+      },
+      {
+        product_data: keyboardProduct,
+        path: 'keyboard'
+      },
+      {
+        product_data: ssdProduct,
+        path: 'ssd'
+      },
+      {
+        product_data: mousePadProduct,
+        path: 'mousepad'
+      },
+      {
+        product_data: cpuProduct,
+        path: 'cpu'
+      },
+      {
+        product_data: hddProduct,
+        path: 'hdd'
+      }
+    ]
     return (
       <div>
       <Switch>
@@ -38,16 +67,23 @@ class MyRoute extends React.Component {
             <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
           ))
         }
-        {
+        {/* {
           mouseProduct.map(products =>(
             <Route path={`/product/${products.id}`} component={(props) => <Sinkha {...props} product={products} />} />
+          ))
+        } */}
+        {
+          item.map((products)=>(
+            products.product_data.map((data)=>(
+            <Route path={`/shop/${products.path}/${data.id}`} component={(props) => <Sinkha {...props} product={data}/>} />
+            ))
           ))
         }
 
         <Route component={NotFoundPage} />
       </Switch>
       
-        <Switch>
+        {/* <Switch>
           <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
           {
@@ -57,7 +93,7 @@ class MyRoute extends React.Component {
           }
 
           <Route component={NotFoundPage} />
-      </Switch>
+      </Switch> */}
       </div>
     );
   }

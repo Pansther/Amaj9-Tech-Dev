@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Link, Switch, Route} from "react-router-dom";
-import Sinkha from './sinkha.js';
 
 
 export const sink = product[0];
@@ -32,10 +31,10 @@ class BestSell extends React.Component{
                 </div>
                 <div className="description">
                     <Link to="xxx">
-                        <h3>{props.description}</h3>
+                        <h3>{props.detail}</h3>
                     </Link>
                 </div>
-                <div className="price">
+                <div className="best-price">
                     <h3>{props.price}</h3>
                 </div>
             </div>
@@ -50,7 +49,7 @@ class BestSell extends React.Component{
                     
                     product.map(prod =>(
                             
-                            <ItemCard id={prod.id} name={prod.name} src={prod.src} description={prod.description} price={prod.price}/>
+                            <ItemCard id={prod.id} name={prod.name} src={prod.src} detail={prod.detail} price={prod.price}/>
                     ))  
                     
                 }

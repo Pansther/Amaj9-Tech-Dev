@@ -92,7 +92,7 @@
     display: flex;
     justify-content: center;
 }
-.review, .spec, .tabButton{
+.tabButton{
     outline: none;
     padding: 10px 30px 10px 30px;
     /* padding-bottom: 2px; */
@@ -104,6 +104,9 @@
 /* .review:hover, .spec:hover{
     background-color: rgba(168, 168, 168, 0.342);
 } */
+.hoverd{
+    background-color: rgba(114, 114, 114, 0.603);
+}
 .active{
     border-bottom:2px rgb(247,167,10) solid;
     padding-bottom: 8px;

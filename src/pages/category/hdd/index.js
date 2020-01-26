@@ -8,7 +8,7 @@ class HDD extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'HDD'} productDataList={hddProduct}/>
+      <ProductList name={'HDD'} productDataList={hddProduct} type="hdd"/>
     );
   }
 }

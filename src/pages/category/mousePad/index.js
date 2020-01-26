@@ -8,7 +8,7 @@ class MousePad extends React.Component {
   render () {
     //console.log(mouseProduct);
     return (
-      <ProductList name={'Mouse-pad'} productDataList={mousePadProduct}/>
+      <ProductList name={'Mouse-pad'} productDataList={mousePadProduct} type="mousepad"/>
     );
   }
 }
