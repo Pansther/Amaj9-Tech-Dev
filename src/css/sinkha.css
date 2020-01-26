@@ -1,9 +1,12 @@
 .container{
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
 }
 .page{
     width: 100%;
+    
 }
 
 .productInfo{
@@ -12,12 +15,12 @@
 }
 .slidepic{
     display:block;
-    width: 40%;
+    width: 35%;
     border-radius: 10px;
     margin: 20px;
     border:2px solid rgba(80, 80, 80, 0.089);
     /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.15); */
-    padding:20px;
+    padding:5px;
 }
 
 .detail{
@@ -116,4 +119,48 @@
     width: 100%;
 
 }
+.slick-dot{
+    bottom: 1px !important;
+    opacity: 0.1;
+    transition: 0.3s;
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    /* transform: translateY(20px); */
+}
+.slick-dot li{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-thumbs{
+    width: 100%;
+}
+.slick-slider:hover .slick-dot{
+    /* transform: translateY(-20px); */
+    opacity: 1;
+    bottom: 10px !important;
+    /* background-color: rgba(59, 59, 59, 0.247) !important; */
+}
+/*  */
+.slick-dot li{
+    
+    border:2px solid rgba(83, 83, 83, 0.404);
+    border-radius: 2px;
+    width: 13% !important;
+    height: 13% !important;
+    margin: 0 2px !important;
+}
+.slick-dot li.slick-active{
+    border: 2px solid rgb(247,167,10);
 
+}

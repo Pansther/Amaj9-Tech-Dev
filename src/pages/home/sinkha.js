@@ -12,6 +12,7 @@ class Sinkha extends React.Component{
             tab: 'description'
         };
     }
+    
     setTab = (newtab) => {
         this.setState({
             tab: newtab
@@ -85,7 +86,7 @@ class Sinkha extends React.Component{
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-            dotsClass: "slick-dots slick-thumb",
+            dotsClass: "slick-dot slick-thumbs",
 
             customPaging: (i) => {
                 return (

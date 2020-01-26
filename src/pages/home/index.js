@@ -42,6 +42,7 @@ class Home extends React.Component{
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
+            dotsClass: "slick-dots",
             // nextArrow: <SampleNextArrow/>
           };
         return(
