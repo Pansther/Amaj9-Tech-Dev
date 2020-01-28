@@ -5,19 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../css/sinkha.css";
 
 class Sinkha extends React.Component{
-    constructor(props){
-        super(props),
-        this.state = {
-            value: 1,
-            tab: 'description'
-        };
-    }
-    
+
+    state = {
+        value: 1,
+        tab: 'description'
+    };
+
     setTab = (newtab) => {
         this.setState({
             tab: newtab
         })
-        
+
     }
     addClick = ()=>{
         this.setState({
@@ -30,10 +28,10 @@ class Sinkha extends React.Component{
                 value: this.state.value - 1
             })
         }
-        
+
     }
     render(){
-        
+
         const Descript = () =>{
             return(
                 <div className="description">
@@ -99,19 +97,19 @@ class Sinkha extends React.Component{
                 );
               },
             //   dotsClass: "slick-dots slick-thumb",
-              
+
             // nextArrow: <SampleNextArrow/>
           };
-        
+
         return(
             <div className="page">
-                
+
                 <div className="container">
-                    <div className="productInfo"> 
+                    <div className="productInfo">
                         <div className="slidepic">
                             <Slider {...settings}>
                                 {
-                                    
+
                                     this.props.product.pic.map(im=>(
                                         console.log(im),
                                         <img src={im} alt=""/>
@@ -132,7 +130,7 @@ class Sinkha extends React.Component{
                             </div>
                             <div className="button">
                                 <div className="number">
-                                    
+
                                     <div className="number-add" onClick={this.subClick}>
                                         -
                                     </div>
@@ -141,7 +139,7 @@ class Sinkha extends React.Component{
                                         +
                                     </div>
                                 </div>
-                                
+
                                 <div className="addtocart">
                                     <button className="cart" >Add to Cart</button>
                                 </div>

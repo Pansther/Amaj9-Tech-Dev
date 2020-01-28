@@ -2,13 +2,19 @@ import React from 'react';
 
 import '../../css/loginStyle.css';
 
+import closeBt from '../../img/login/close-button.svg' ;
+
 import { Link } from 'react-router-dom';
+
 
 class Login extends React.Component {
   render () {
     return (
       <div className= "login-contain" id ="login-contain-id">
         <div className="contain">
+        <div className="boxClose">
+        <img onClick ={()=>closeLogin()} src={closeBt} alt="close-button" id ="closeBt"/>
+        </div>
           <div className = "contain-box">
             <div className="idgroup">
               <div className="idinput">
@@ -38,5 +44,10 @@ class Login extends React.Component {
   )
   }
 }
-
+const closeLogin = ()=>{
+  let closeButton = document.getElementById("login-contain-id")
+  closeButton.style.opacity = "0";
+  closeButton.style.visibility = "hidden";
+  console.log(closeButton);
+}
 export default Login;
