@@ -19,6 +19,7 @@ import {hddProduct} from '../../pages/category/hdd/product.js';
 import {cpuProduct} from '../../pages/category/cpu/product.js';
 
 
+
 import Sinkha from '../../pages/home/sinkha.js';
 /*
 {
@@ -82,7 +83,7 @@ class MyRoute extends React.Component {
 
         <Route component={NotFoundPage} />
       </Switch>
-      
+
         {/* <Switch>
           <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 

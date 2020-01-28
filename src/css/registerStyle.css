@@ -1,0 +1,99 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  min-height: 100%;
+  position: relative;
+  background: #ffffe6;
+}
+.contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  position: relative;
+  bottom: 20px;
+
+}
+.row{
+  display: flex;
+  flex-direction:row;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.group-r1-c1{
+  width: 270px;
+  margin-left: 40px;
+}
+.group-r1-c2{
+  width: 270px;
+  margin-left: 40px;
+}
+.group-r2-c1{
+  width: 260px;
+  margin-left: 50px;
+}
+.group-r2-c2{
+  width: 280px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.group-r3-c1{
+  width: 270px;
+  margin-left: 40px;
+}
+.group-r3-c2{
+  width: 270px;
+  margin-left: 40px;
+}
+.group-r4-c1{
+  width: 260px;
+  margin-left: 50px;
+}
+.group-r4-c2{
+  width: 280px;
+  margin-left: 50px;
+}
+#box1{
+  width: 170px;
+  height: 25px;
+  font-family: monospace;
+  font-size: 16px;
+  margin-right: 5px;
+}
+#box2{
+  width: 130px;
+  height: 25px;
+  font-family: monospace;
+  font-size: 16px;
+  margin-right: 0px;
+}
+#box3{
+  width: 170px;
+  height: 25px;
+  font-family: monospace;
+  font-size: 16px;
+}
+#box4{
+  width: 170px;
+  height: 80px;
+  font-family: monospace;
+  font-size: 10px;
+}
+#text{
+}
+.btsummit{
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+}
+#head-name{
+  font-size: 50px;
+  font-family: monospace;
+}
+#bdbox{
+  width: 160px;
+  height: 25px;
+  margin-top: 20px;
+}

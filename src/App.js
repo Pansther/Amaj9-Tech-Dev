@@ -17,17 +17,16 @@ import './css/mainStyle.css';
 function App() {
   return (
     <div className="Main">
-
-      <Login/>
-
+ 
       <BrowserRouter>
 
+        <Login/>
         <Navbar/>
         <MyRoute/>
         <Footer/>
 
       </BrowserRouter>
-      
+
     </div>
   );
 }

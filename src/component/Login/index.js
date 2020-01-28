@@ -4,7 +4,11 @@ import '../../css/loginStyle.css';
 
 import closeBt from '../../img/login/close-button.svg' ;
 
-import { Link } from 'react-router-dom';
+import {
+  Link,
+  BrowserRouter,
+  Switch,
+ } from 'react-router-dom';
 
 
 class Login extends React.Component {
@@ -28,14 +32,18 @@ class Login extends React.Component {
                 <text id = "textPassword"> Password : </text>
               </div>
               <div className="fgpwdgroup">
-                <input type="text" name="password" id = "pwd" maxlength="10"/>
+                <input type ="password" name="password" id = "pwd" maxlength="10"/>
                 <text id = "forgetpwd">Forgot password?</text>
               </div>
 
             </div>
             <div className="btgroup">
               <button className="bt" id = "bt1">Login</button>
-              <button className="bt" id = "bt2">Sign-up</button>
+
+              <Link to = "/register">
+              <button onClick ={()=>closeLogin()} className="bt" id = "bt2">Sign-up</button>
+
+              </Link>
 
             </div>
        </div>
