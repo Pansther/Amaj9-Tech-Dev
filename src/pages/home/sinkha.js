@@ -119,14 +119,16 @@ class Sinkha extends React.Component{
                             </Slider>
                         </div>
                         <div className="detail">
-                            <div className="item-name">
-                                {this.props.product.name}
-                            </div>
-                            <div className="descript">
-                                {this.props.product.detail}
-                            </div>
-                            <div className="price">
-                                {this.props.product.price}
+                            <div className="itemInfo">
+                                <div className="item-name">
+                                    {this.props.product.name}
+                                </div>
+                                <div className="descript">
+                                    {this.props.product.detail}
+                                </div>
+                                <div className="price">
+                                    {"Price : " + this.props.product.price}
+                                </div>
                             </div>
                             <div className="button">
                                 <div className="number">
