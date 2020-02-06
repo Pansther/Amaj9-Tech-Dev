@@ -14,7 +14,7 @@ class Login extends React.Component {
               <div className="idinput">
                 <text id = "textID"> ID : </text>
               </div>
-              <input type="text" name="ID" id = "id" maxlength="10"/>
+              <input type="text" name="ID" id = "id" maxLength="10"/>
             </div>
 
             <div className="pwdgroup">
@@ -22,7 +22,7 @@ class Login extends React.Component {
                 <text id = "textPassword"> Password : </text>
               </div>
               <div className="fgpwdgroup">
-                <input type="text" name="password" id = "pwd" maxlength="10"/>
+                <input type="text" name="password" id = "pwd" maxLength="10"/>
                 <text id = "forgetpwd">Forgot password?</text>
               </div>
 

@@ -26,7 +26,7 @@ export const categoryData = [
     id: 3,
     name: 'Mouse pad',
     img: mousePadImg,
-    href: '/mouse-pad',
+    href: '/mousepad',
   },
   {
     id: 4,
@@ -68,6 +68,6 @@ export const categoryData = [
     id: 10,
     name: 'Sound card',
     img: soundCardImg,
-    href: '/sound-card',
+    href: '/soundcard',
   }
 ];

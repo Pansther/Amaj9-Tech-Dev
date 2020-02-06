@@ -9,34 +9,37 @@ import {
 } from "react-router-dom";
 
 import {categoryData} from './categoryData.js';
-import {categoryRoute} from '../../component/route/categoryRoute.js';
+
+import ProductList from '../../component/productList/index.js';
+import Sinkha from '../../pages/home/sinkha.js';
+import {allProductItem} from './allProducts/allProductItem.js';
 
 import '../../css/categoryStyle.css';
 
-/// problem solution of return Component instead <Component />
-function NewHOC (PassedComponent) {
-  return class extends React.Component {
-    render() {
-      return (
-          <PassedComponent {...this.props} />
-      )
-    }
-  }
+function ProductDetail(props) {
+  let { productId } = useParams();
+  return (
+    <div className={`${props.name}-product-${productId}`}>
+      {
+        allProductItem.map((products)=>(
+          products.product_data.map((data)=>(
+            <Route exact path={`/category/${products.path}/${data.id}`} component={(props) => <Sinkha {...props} key={products.id} product={data}/>} />
+          ))
+        ))
+      }
+    </div>
+  );
 }
 
 function SubCategory(props) {
   let { pathId } = useParams();
-  //console.log(categoryRoute);
-
+  console.log(pathId);
   return (
-    <div className={pathId}>
+    <div className={`${pathId}-list`}>
       {
-        categoryRoute
-        .filter(cate => cate.path === `/${pathId}`)
-        .map(cate => {
-            const NewComponent = NewHOC(cate.component)
-            return(<NewComponent key={cate.id}/>)
-        })
+        allProductItem.map(product => (
+          <Route exact path={`/category/${product.path}`} component={(props) => <ProductList {...props} productDataList={product.product_data} type={product.path} />} />
+        ))
       }
     </div>
   );
@@ -83,13 +86,14 @@ const Category =()=> {
   return (
     <Switch>
 
-      {/*
-        if don't go to sub-cate, it show category.
-        if go to sub-cate, it link to this sub-cate with nested route.
-      */}
+      <Route exact path={path} component={CategoryMain} />
+      <Route exact path={`${path}/:pathId`} component={SubCategory} />
 
-      <Route exact path={path} component={CategoryMain} /> {/*main cate*/}
-      <Route path={`${path}/:pathId`} component={SubCategory} /> {/*many sub cate*/}
+      {
+        categoryData.map(cate => (
+          <Route exact path={`${path}${cate.href}/:productId`} component={(props) => <ProductDetail {...props} name={cate.name} /> } />
+        ))
+      }
 
     </Switch>
   );

@@ -34,7 +34,7 @@ const CreateProduct =(props)=> {
   //console.log(props.id);
   return (
     <div className='product' id={props.id}>
-      <Link className='img-box' to={`/shop/${props.type}/${props.id}` }>
+      <Link className='img-box' to={`/category/${props.type}/${props.id}` }>
         <img src={props.cover} alt={props.name}/>
       </Link>
       <div className='detail-box'>
