@@ -99,7 +99,12 @@ class Sinkha extends React.Component{
             //   dotsClass: "slick-dots slick-thumb",
 
             // nextArrow: <SampleNextArrow/>
+<<<<<<< HEAD
           }; 
+=======
+          };
+
+>>>>>>> aae5073860c77d4655ae49cec5668b0b4edb69ef
         return(
             <div className="page">
 
@@ -118,14 +123,16 @@ class Sinkha extends React.Component{
                             </Slider>
                         </div>
                         <div className="detail">
-                            <div className="item-name">
-                                {this.props.product.name}
-                            </div>
-                            <div className="descript">
-                                {this.props.product.detail}
-                            </div>
-                            <div className="price">
-                                {this.props.product.price}
+                            <div className="itemInfo">
+                                <div className="item-name">
+                                    {this.props.product.name}
+                                </div>
+                                <div className="descript">
+                                    {this.props.product.detail}
+                                </div>
+                                <div className="price">
+                                    {"Price : " + this.props.product.price}
+                                </div>
                             </div>
                             <div className="button">
                                 <div className="number">

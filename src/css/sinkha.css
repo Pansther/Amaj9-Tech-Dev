@@ -13,6 +13,8 @@
     display:flex;
     width: 100%;
 }
+
+
 .slidepic{
     display:block;
     width: 35%;
@@ -164,3 +166,120 @@
     border: 2px solid rgb(247,167,10);
 
 }
+
+@media (max-width: 320px){
+    .productInfo{
+        flex-direction: column;
+    }
+    .slidepic{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cart, .wish{
+        font-size: 0.6em;
+    }
+    .tabButton{
+        font-size: 0.8em;
+    }
+    .item-name{
+        font-size: 1em;
+    }
+    .descript{
+        font-size: 0.8em;
+    }
+    .price{
+        font-size: 0.8em;;
+    }
+}
+@media (min-width: 320px){
+    .productInfo{
+        flex-direction: column;
+    }
+    .slidepic{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cart, .wish{
+        font-size: 0.6em;
+    }
+    .tabButton{
+        font-size: 0.8em;
+    }
+    .item-name{
+        font-size: 1em;
+    }
+    .descript{
+        font-size: 0.8em;
+    }
+    .price{
+        font-size: 0.8em;
+    }
+}
+@media (min-width:767px){
+    .productInfo{
+        flex-direction: column;
+    }
+    .itemInfo{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slidepic{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .button{
+        justify-content: center;
+    }
+    .tabButton{
+        font-size: 1.5em;
+    }
+    .cart, .wish{
+        font-size: 0.8em;
+    }
+    .item-name{
+        font-size: 1.2em;
+    }
+    .descript{
+        font-size: 1em;
+    }
+    .price{
+        font-size: 1em;
+    }
+}
+
+@media (min-width:1023px){
+    .productInfo{
+        flex-direction: row;
+    }
+    .itemInfo{
+        width: 80%;
+        margin: 0;
+    }
+    .detail{
+        margin: 0 auto;
+    }
+    .slidepic{
+        width: 35%;
+        margin: 20px;
+    }
+    .button{
+        justify-content: center;
+    }
+    .tabButton{
+        font-size: 2em;
+    }
+    .cart, .wish{
+        font-size: 1em;
+    }
+    .item-name{
+        font-size: 1.5em;
+    }
+    .descript{
+        font-size: 1.2em;
+    }
+    .price{
+        font-size: 1.2em;
+    }
+}
+
+
