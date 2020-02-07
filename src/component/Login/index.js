@@ -32,11 +32,7 @@ class Login extends React.Component {
                 <text id = "textPassword"> Password : </text>
               </div>
               <div className="fgpwdgroup">
-<<<<<<< HEAD
                 <input type="text" name="password" id = "pwd" maxLength="10"/>
-=======
-                <input type ="password" name="password" id = "pwd" maxlength="10"/>
->>>>>>> aae5073860c77d4655ae49cec5668b0b4edb69ef
                 <text id = "forgetpwd">Forgot password?</text>
               </div>
 

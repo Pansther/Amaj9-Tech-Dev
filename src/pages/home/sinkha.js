@@ -99,12 +99,7 @@ class Sinkha extends React.Component{
             //   dotsClass: "slick-dots slick-thumb",
 
             // nextArrow: <SampleNextArrow/>
-<<<<<<< HEAD
-          }; 
-=======
           };
-
->>>>>>> aae5073860c77d4655ae49cec5668b0b4edb69ef
         return(
             <div className="page">
 

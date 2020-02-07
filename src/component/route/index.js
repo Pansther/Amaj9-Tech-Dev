@@ -15,23 +15,11 @@ import {sink} from '../../pages/home/bestseller.js'
 
 
 import Sinkha from '../../pages/home/sinkha.js';
-/*
-{
-  categoryRoute.map(cate => (
-    <CreateRoute key={cate.id} path={cate.path} component={cate.component} />
-  ))
-}
-*/
 
 class MyRoute extends React.Component {
 
   render () {
     return (
-<<<<<<< HEAD
-      <>
-        <Switch>
-=======
-      <div>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 
@@ -40,35 +28,9 @@ class MyRoute extends React.Component {
             <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
           ))
         }
-        {/* {
-          mouseProduct.map(products =>(
-            <Route path={`/product/${products.id}`} component={(props) => <Sinkha {...props} product={products} />} />
-          ))
-        } */}
-        {
-          item.map((products)=>(
-            products.product_data.map((data)=>(
-            <Route path={`/shop/${products.path}/${data.id}`} component={(props) => <Sinkha {...props} product={data}/>} />
-            ))
-          ))
-        }
 
         <Route component={NotFoundPage} />
       </Switch>
-
-        {/* <Switch>
->>>>>>> aae5073860c77d4655ae49cec5668b0b4edb69ef
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-
-          {
-            navRoute.map(nav => (
-              <CreateRoute key={nav.id} path={nav.path} component={nav.component} />
-            ))
-          }
-
-          <Route component={NotFoundPage} />
-        </Switch>
-      </>
     );
   }
 

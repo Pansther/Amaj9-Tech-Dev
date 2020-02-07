@@ -86,6 +86,11 @@ const Category =()=> {
   return (
     <Switch>
 
+      {/*
+        if don't go to sub-cate, it show category.
+        if go to sub-cate, it link to this sub-cate with nested route.
+      */}
+
       <Route exact path={path} component={CategoryMain} />
       <Route exact path={`${path}/:pathId`} component={SubCategory} />
 
